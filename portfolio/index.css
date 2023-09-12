@@ -1,0 +1,245 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	text-decoration: none;
+	font-family: cursive;
+	scroll-behavior: smooth;
+}
+html{
+	scroll-behavior: smooth;
+}
+body{
+	background: black;
+}
+.container{
+	padding: 10px 10%;
+}
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.mylogo{
+	width: 140px;
+	color: hotpink;
+	font-weight: 700;
+	font-size: 36px;
+	text-decoration: none;
+}
+nav ul li{
+	margin: 10px 20px;
+	display: inline-block;
+}
+nav ul li a{
+	font-size: 18px;
+	color: white;
+	position: relative;
+	text-decoration: none;
+}
+nav ul li a:hover{
+	color: violet;
+}
+section{
+	padding: 10rem 9% 2rem;
+}
+.port-header h3{
+	font-size: 3rem;
+	font-weight: 600;
+	margin-top: 5%;
+	padding: 2px 0;
+	color: white;
+}
+.port-header h3:nth-of-type(2){
+	margin-bottom: 2rem;
+}
+section span{
+	color: hotpink;
+}
+.port-header h1{
+	color: white;
+	line-height: 1.3;
+	font-size: 5.6rem;
+	font-weight: 700;
+}
+#about{
+	margin: 200px 0;
+	padding: 100px 0;
+	color: white;
+}
+.portrow{
+	display: flex;
+	justify-content: space-between;
+}
+.portcolumn{
+	flex-basis: 40%;
+}
+.portcolumn img{
+	border-radius: 25px;
+}
+.portcolumn1{
+	flex-basis: 55%;
+}
+.portheading{
+	color: white;
+	font-size: 60px;
+	font-weight: 600;
+}
+.portskills{
+	margin: 20px 0 40px;
+	display: flex;
+}
+.myskills{
+	margin-right: 50px;
+	font-size: 18px;
+	font-weight: 500;
+	position: relative;
+	cursor: pointer;
+}
+.myskills::after{
+	left: 0;
+	width: 0;
+	bottom: -8px;
+	height: 3px;
+	background: hotpink;
+    position: absolute;
+	content: '';
+	transition: 0.5s;
+}
+.myskills.active-link::after{
+	width: 100%;
+}
+.portcontents ul li{
+	list-style: none;
+	margin: 10px 0;
+}
+.portcontents ul li span{
+	font-size: 15px;
+	color: violet;
+}
+.portcontents{
+	display: none;
+}
+.portcontents.active-content{
+    display: block;
+}
+#projects{
+	padding: 30px 0;
+}
+.portproject{
+	margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+}
+.portproject div{
+	padding: 40px;
+	font-size: 12px;
+	font-weight: 300;
+	color: hotpink;
+	border-radius: 10px;
+	background-color: #2F3232;
+	transition: background 0.5s, transform 0.5s;
+}
+.portproject div h2{
+	font-size: 30px;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.portproject div i{
+	margin-bottom: 35px;
+	font-size: 50px;
+}
+.portproject div a{
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+	margin-top: 20px;
+	font-size: 13px;
+}
+.portproject div:hover{
+	transform: translateY(-10px);
+	background: lightblue;
+}
+#contact{
+	padding: 50px 0;
+}
+.mycontact p{
+	color: white;
+}
+.mycontact{
+	flex-basis: 35%;
+}
+.portcontact{
+	flex-basis: 60%;
+}
+.mycontact p{
+    margin-top: 30px;
+}
+.mycontact p i{
+	font-size: 26px;
+	margin-right: 15px;
+	color: blueviolet;
+}
+.social-icons{
+	margin-top: 30px;
+}
+.social-icons a{
+	margin-right: 16px;
+	display: inline-block;
+    color: aliceblue;
+	text-decoration: none;
+	font-size: 35px;
+}
+.social-icons a:hover{
+	color: rgb(73, 220, 246);
+}
+.port-contact form{
+	display: inline;
+	align-items: center;
+    justify-content: center;
+}
+.port-contact form{
+	width: 100%;
+}
+form input, form textarea{
+	width: 100%;
+	margin:15px 0;
+	padding: 15px;
+	color: aliceblue;
+	border: 0;
+	border-radius: 5px;
+	background: #262626;
+	outline: none;
+    font-size: 20px;
+}
+form .btn{
+    font-size: 20px;
+	cursor: pointer;
+	padding: 15px 50px;
+	margin-top: 20px;
+    background-color: lightpink;
+	border-radius: 8px;
+}
+form .btn:hover{
+	background-color: rgb(143, 90, 222);
+}
+.port-copyright{
+	width: 100%;
+	padding: 25px 0;
+	margin-top: 20px;
+	font-weight: 350;
+	text-align: center;
+	background: #262626;
+	position: relative;
+}
+.port-copyright p{
+	color: white;
+}
+#span{
+	display: block;
+	margin-top: -10px;
+	color: blueviolet;
+}

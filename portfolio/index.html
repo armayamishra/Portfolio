@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <title>My Portfolio</title>
+  <script src="https://kit.fontawesome.com/50484ded8f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+       <div class="container">
+         <nav>
+           <a href="#" class="mylogo">Armaya!</a>
+           <ul>
+             <li><a href="#home">Home</a></li>
+             <li><a href="#about">About</a></li>
+             <li><a href="#projects">My Projects</a></li>
+             <li><a href="#contact">Contact</a></li>
+           </ul>
+         </nav>
+         <section class="port-home" id="home">
+         <div class="port-header">
+           <h3>Hey, I am</h3>
+           <h1>Armaya Mishra</h1> 
+           <h3>And I am a <span class="multiple-text">Frontend Developer</span></h3>
+         </div>
+       </section>
+       </div>
+       <div id="about">
+         <div class="container">
+           <div class="portrow">
+             <div class="portcolumn">
+               <img src="armaya-image.png" height="600px" width="400px">
+             </div>
+             <div class="portcolumn1">
+               <h1 class="portheading">About Me</h1>
+               <p>Hello! I'm Armaya Mishra, a passionate computer science student at Amity University. I've always been fascinated by the dynamic world of technology, and my journey in this field has been nothing short of exhilarating.<br>
+               As I pursue a Bachelor's degree in Computer Science, I'm continually invigorated by the challenges that programming and logical thinking present. I've honed my skills in languages such as Java and web development technologies like HTML, CSS, and JavaScript. This knowledge has powered me through a diverse array of projects that have expanded my horizons.<br>
+               When I'm not busy crafting code, you might find me in writing poetries.<br>
+               Feel free to explore my portfolio and connect with me on LinkedIn. Let's build the future together!</p>
+               <div class="portskills">
+                 <p class="myskills active-link" onclick="opentab('skills')">Skills</p>
+                 <p class="myskills" onclick="opentab('education')">Education</p>
+               </div>
+               <div class="portcontents active-content" id="skills">
+                 <ul>
+                   <li><span>Web Development</span><br>Frontend Developer</li>
+                   <li><span>Programming</span><br>Java</li>
+                 </ul>
+               </div>
+               <div class="portcontents" id="education">
+                 <ul>
+                   <li><span>2021</span><br>Inter from St. Mary's Inter College</li>
+                   <li><span>Present</span><br>B.Tech(CSE) from Amity University</li>
+                 </ul>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+       <div id="projects">
+         <div class="container">
+           <h1 class="portheading">My Projects</h1>
+           <div class="portproject">
+              <div>
+                <i class="fa-solid fa-coins fa-fade"></i>
+                <h2>Currency Converter</h2>
+                <p> A Currency Converter is a Software application or a website that provides for the easy conversion of currency value based on present-day exchange rates. I have created a Currency Converter Website using HTML, CSS and JAVASCRIPT.</p>
+                <a href="https://armayamishra.github.io/currency_converter/">Learn more</a>
+              </div>
+              <div>
+                <i class="fa-solid fa-bag-shopping fa-fade"></i>
+                <h2>Amazon Clone</h2>
+                <p>Amazon is an American multinational technology company focusing on e-commerce, cloud computing, online advertising, digital streaming anf artificial intelligence. I have created a Amazon Clone using HTML, CSS and JAVASCRIPT.</p>
+                <a href="https://armayamishra.github.io/Amazon_clone/">Learn more</a>
+              </div>
+              <div>
+                <i class="fa-solid fa-temperature-high fa-fade"></i>
+                <h2>Temperature Converter</h2>
+                <p>A Temperature Converter helps in the conversion of the measurement units of the temperature recorded in a particular unit. I have created a Temperature Converter using HTML, CSS and JAVASCRIPT which converts the temperature celcius to fahrenheit.</p>
+                <a href="https://armayamishra.github.io/Temperature_Converter/">Learn more</a>
+              </div>
+              <div>
+                <i class="fa-solid fa-calculator fa-fade"></i>
+                <h2>Calculator</h2>
+                <p>A calculator is a device that performs arithmetic operations on numbers. Calculators work by performing programmed functions based on numerical inputs. I have created a Calculator using HTML, CSS and JAVASCRIPT which performs calculations like addition, subtraction, multiplication and divison.</p>
+                <a href="https://armayamishra.github.io/calculator/">Learn more</a>
+              </div>
+              <div>
+                <i class="fa-solid fa-user fa-fade"></i>
+                <h2>Login Page</h2>
+                <p>A Login Page is used to allow the user's to login on the website or application. I have created a Login Page using HTML, CSS and JAVASCRIPT.</p>
+                <a href="https://armayamishra.github.io/login_page/">Learn more</a>
+              </div>
+           </div>
+         </div>
+       </div>
+       <div id="contact">
+         <div class="container">
+          <div class="port-row">
+            <div class="mycontact">
+           <h1 class="portheading">Contact</h1>
+            <p><i class="fa-solid fa-envelope"></i>armayamishra7148@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>7500943005</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/armaya-mishra-a4a746285"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/armayamishra"><i class="fa-brands fa-github"></i></a>
+            </div>
+           </div>
+           <div class="port-contact">
+            <form name="submit-to-google-sheet">
+              <input type ="text" name="Name" placeholder="Your Name" required>
+              <input type ="email" name="Email" placeholder="Your Email" required>
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn">Submit</button>
+            </form>
+            <span id="msg">Hello</span>
+           </div>
+           </div>
+         </div>
+         <div class="port-copyright">
+          <p>Copyright &copy by armayamishra</p>
+         </div>
+       </div>
+      <script src="https://unpkg.com/scrollreveal"></script>
+      <script type="text/javascript" src="index.js"></script>
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxACFx7PlYLH-nQdAacZc5JjwxndCyGBNKVT53W9f2vXHysp1wTRRDpPfYLfDP-KdEdAw/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
